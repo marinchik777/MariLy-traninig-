@@ -393,7 +393,7 @@ input[type=date]::-webkit-datetime-edit{padding:0}
 <aside class="drawer" id="drawer" aria-label="Меню"></aside>
 <div class="auth" id="auth" hidden></div>
 <div class="toast" id="toast" hidden role="status"></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js"></script>
 <div class="sheet" id="sheet" hidden><div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="День"></div></div>
 
 <script>
@@ -958,7 +958,7 @@ window.addEventListener('hashchange',setTabFromHash);
 /* ---------- sign-in (Supabase), standalone site only ---------- */
 let SB=null,curUid=null,userEmail='',authView='login',authErr='',authEmail='',recovering=false;
 function sbCfg(){
-  const c={url:'',key:''};
+  const c={url:'https://wbaauscethuxagofbmkx.supabase.co',key:'sb_publishable_IwJ295pTwsIKpC_LpM7KnQ_KKsrKgTR'};
   if(c.url&&c.key)return c;
   try{const x=JSON.parse(localStorage.getItem('mlt.cfg')||'null');if(x&&x.url&&x.key)return x}catch(e){}
   return null;
